@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastyFlame - Your Order</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body class="orders-page">
+  <header>
+    <nav class="navbar">
+      <div class="logo"><h1>TastyFlame</h1></div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="orders.html" class="active">Orders</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="cart-container">
+        <a href="orders.html" class="cart-btn">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cartCount">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="order-container">
+      <h2>Your Order</h2>
+      
+      <!-- Cart Section -->
+      <div class="cart-section">
+        <h3>Cart Items</h3>
+        <div class="order-items" id="orderItems">
+          <!-- Order items will be displayed here -->
+        </div>
+        
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          
+          <!-- Coupon Code -->
+          <div class="coupon-container">
+            <input type="text" id="couponCode" placeholder="Enter coupon code">
+            <button id="applyCouponBtn">Apply</button>
+          </div>
+          
+          <div class="total-container">
+            <div class="subtotal">
+              <span>Subtotal:</span>
+              <span id="subtotal">₹0</span>
+            </div>
+            <div class="discount">
+              <span>Discount:</span>
+              <span id="discount">₹0</span>
+            </div>
+            <div class="total">
+              <span>Total:</span>
+              <span id="total">₹0</span>
+            </div>
+          </div>
+          
+          <button id="clearCartBtn" class="btn">Clear Cart</button>
+        </div>
+      </div>
+      
+      <!-- Customer Information -->
+      <div class="customer-info">
+        <h3>Customer Information</h3>
+        <input type="text" id="customerName" placeholder="Your Name">
+        <input type="text" id="customerEmail" placeholder="Email">
+        <input type="text" id="customerPhone" placeholder="Phone Number">
+        <input type="text" id="customerAddress" placeholder="Delivery Address">
+        <select id="paymentMode">
+          <option value="cash">Cash on Delivery</option>
+          <option value="upi">UPI</option>
+        </select>
+        <button id="placeOrderBtn" class="btn" onclick="showOrderConfirmation()">Place Order</button>
+        <button id="generateBillBtn" class="btn" onclick="generateInvoice()">Generate Invoice</button>
+      </div>
+      
+      <!-- Order History Section -->
+      <div class="order-history-section">
+        <h3>Order History</h3>
+        <div id="orderHistory">
+          <!-- Order history will be displayed here -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- Order Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Confirm Your Order</h2>
+        <div id="confirmationDetails"></div>
+        <div class="modal-buttons">
+          <button id="confirmOrderBtn" class="btn">Confirm Order</button>
+          <button id="cancelOrderBtn" class="btn btn-secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Order Success Modal -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Order Placed Successfully!</h2>
+        <p>Your order has been placed successfully.</p>
+        <p>Order ID: <span id="successOrderId"></span></p>
+        <div class="modal-buttons">
+          <button id="closeSuccessBtn" class="btn">Close</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2025 TastyFlame Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- jsPDF for invoice generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        window.jspdf = window.jspdf || {};
+    </script>
+    <!-- Modular JavaScript files -->
+    <script src="js/menu.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/order.js"></script>
+    <!-- Main JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

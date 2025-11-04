@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastyFlame - Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="menu-page">
+  <header>
+    <nav class="navbar">
+      <div class="logo"><h1>TastyFlame</h1></div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="orders.html">Orders</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="cart-container">
+        <a href="orders.html" class="cart-btn">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cartCount">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="menu-header">
+      <h1>Our Menu</h1>
+      <p>Explore our delicious offerings</p>
+    </div>
+    
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for dishes...">
+    </div>
+    
+    <!-- Category Filter -->
+    <div class="category-filter" id="categoryFilter">
+      <!-- Categories will be dynamically added here -->
+    </div>
+    
+    <!-- Menu Container -->
+    <div class="menu-container" id="menuContainer">
+      <!-- Menu items will be dynamically added here -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2025 TastyFlame Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- jsPDF for invoice generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- Modular JavaScript files -->
+    <script src="js/menu.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/order.js"></script>
+    <!-- Main JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

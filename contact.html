@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastyFlame - Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="contact-page">
+  <header>
+    <nav class="navbar">
+      <div class="logo"><h1>TastyFlame</h1></div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="orders.html">Orders</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <div class="cart-container">
+        <a href="orders.html" class="cart-btn">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cartCount">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you!</p>
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>123 Food Street, Flavor City, FC 12345</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <p>+1 (555) 123-4567</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <p>info@tastyflame.com</p>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h2>Send us a Message</h2>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <input type="tel" id="phone" placeholder="Your Phone">
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section"><h3>TastyFlame Restaurant</h3><p>123 Flavor Street, Foodville</p><p>Phone: +91 9876543210</p><p>Email: info@tastyflame.com</p></div>
+      <div class="footer-section"><h3>Quick Links</h3><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="orders.html">Orders</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-section"><h3>Opening Hours</h3><p>Mon - Fri: 9am - 10pm</p><p>Sat - Sun: 10am - 11pm</p></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 TastyFlame Restaurant. All rights reserved.</p></div>
+  </footer>
+  <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- jsPDF for invoice generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- Modular JavaScript files -->
+    <script src="js/menu.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/order.js"></script>
+    <!-- Main JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
