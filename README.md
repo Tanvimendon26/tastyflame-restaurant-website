@@ -32,7 +32,7 @@ tastyflame/
 ```
 
 🧰 Technologies Used
-HTML5
-CSS3
-JavaScript (Vanilla JS)
-Responsive Design Principles
+-HTML5
+-CSS3
+-JavaScript (Vanilla JS)
+-Responsive Design Principles
