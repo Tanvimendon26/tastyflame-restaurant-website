@@ -17,7 +17,9 @@ Contact Page – Lets users reach out directly through the form.
 
 LocalStorage Ready – Extendable for cart or order history features.
 
-🗂️ Project Structure
+## 🗂️ Project Structure
+
+```
 tastyflame/
 ├── index.html          # Homepage
 ├── menu.html           # Menu page
@@ -27,6 +29,7 @@ tastyflame/
 ├── script.js           # Main JS
 ├── js/                 # JS modules (cart, menu, order)
 └── images/             # Backgrounds, dishes, and assets
+```
 
 🧰 Technologies Used
 HTML5
