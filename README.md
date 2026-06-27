@@ -1,39 +1,119 @@
-🍽️ TastyFlame – Modern Restaurant Website
+# 🍽️ TastyFlame – Modern Restaurant Ordering Website
 
-TastyFlame is a clean, responsive, and visually appealing restaurant website built using HTML, CSS, and JavaScript.
-It showcases the restaurant’s menu, allows users to explore dishes, and provides an easy interface to place orders — perfect for modern dining businesses or web portfolios.
+TastyFlame is a responsive restaurant ordering website built using **HTML, CSS, and JavaScript**. The application provides an interactive food ordering experience where users can browse the menu, search dishes, manage their cart, apply coupons, place orders, generate invoices, and submit feedback through a modern user interface.
 
-🌟 Features
+## 🌐 Live Demo
 
-Responsive Design – Optimized for mobile, tablet, and desktop screens.
+https://tastyflame-restaurant-website.vercel.app/
 
-Dynamic Menu Section – Showcases dishes with photos, prices, and short descriptions.
+---
 
-Interactive Order Page – Simple and intuitive customer order form.
+## ✨ Features
 
-Smooth UI & Hover Effects – Enhances the visual experience.
+### 🏠 Home
+- Responsive landing page
+- Hero section
+- Customer testimonials
+- Dark / Light theme
+- Smooth navigation
 
-Contact Page – Lets users reach out directly through the form.
+### 🍽️ Menu
+- Dynamic menu rendering
+- Category filtering
+- Dish search
+- Customer ratings & reviews
+- Average rating calculation
+- Add to Cart functionality
 
-LocalStorage Ready – Extendable for cart or order history features.
+### 🛒 Shopping Cart
+- Add & remove items
+- Update item quantities
+- Automatic price calculation
+- Persistent cart using LocalStorage
 
-## 🗂️ Project Structure
+### 📦 Orders
+- Customer information form
+- Order confirmation
+- Order history
+  
+
+### 🧾 Invoice Generation
+- Download invoice as PDF
+- Customer details
+- Ordered items
+- Payment summary
+
+### 📞 Contact
+- Contact form powered by Formspree
+
+---
+
+## 🛠️ Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- LocalStorage API
+- jsPDF
+- jsPDF AutoTable
+- Font Awesome
+- Formspree
+
+---
+
+## 📂 Project Structure
 
 ```
-tastyflame/
-├── index.html          # Homepage
-├── menu.html           # Menu page
-├── contact.html        # Contact form
-├── orders.html         # Order form
-├── style.css           # Website styling
-├── script.js           # Main JS
-├── js/                 # JS modules (cart, menu, order)
-└── images/             # Backgrounds, dishes, and assets
+TastyFlame/
+│
+├── index.html
+├── menu.html
+├── orders.html
+├── contact.html
+├── style.css
+├── script.js
+├── js/
+│   ├── menu.js
+│   ├── cart.js
+│   └── order.js
+├── images/
+└── README.md
 ```
 
-## 🧰 Technologies Used
+---
 
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla JS)**
-- **Responsive Design Principles**
+## 🚀 Getting Started
+
+Clone the repository
+
+```bash
+git clone https://github.com/Tanvimendon26/tastyflame-restaurant-website.git
+```
+
+Open `index.html` in your browser.
+
+No backend setup is required.
+
+---
+
+## 📈 Future Enhancements
+
+- User Authentication
+- Online Payment Integration
+- Backend Database
+- Admin Dashboard
+- Food Recommendation System
+- Table Reservation
+- Delivery Tracking
+
+---
+
+## 👩‍💻 Author
+
+**Tanvi Harish Mendon**
+
+---
+
+## 📄 License
+
+This project is developed for educational and portfolio purposes.
